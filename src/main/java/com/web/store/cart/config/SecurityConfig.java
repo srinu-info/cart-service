@@ -34,7 +34,7 @@ public class SecurityConfig {
                                 "/h2-console/**")
                         .permitAll()
 
-                        .requestMatchers("/cart/**","/cart")
+                        .requestMatchers("/cart/**","/cart","/api/cart/**","/api/cart")
                         .hasRole("CUSTOMER")
 
                         .anyRequest()
